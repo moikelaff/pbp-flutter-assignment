@@ -33,3 +33,30 @@ saat memakai <code>navigator.Push</code> layar akan ditimpa dengan layar baru ya
 3. membuat <code>budgetData.dart</code> yang isinya data budget
 4. membuat <code>showBudget.dart</code> buat ngeshow data budget
 5. routing semua url di <code>drawer.dart</code>
+
+# TUGAS 9
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+bisa, tapi lebih baik bikin model karena lebih maintainable dan reusable
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* futureBuilder: buat ngebuild widget dari future
+* listview: buat ngebuild list
+* listtile: buat ngebuild list item
+* text: buat ngebuild text
+* ElevatedButton: buat ngebuild button
+* CircularProgressIndicator: buat ngebuild loading indicator
+* MaterialPageRoute: buat change page
+* dll
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+* add dependency <code>http</code> untuk data fetching
+* membuat model buat data yang mau di fetch
+* membuat HTTP request GET buat fetch data
+* membuat FutureBuilder untuk ngebuild data yang sudah di fetch dengan GET request
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. add http di pubspec.yaml
+2. buat watchlist models
+3. buat watchlist page
+4. add routing watchlist ke drawer
+5. membuat datafetcher
+6. buat futurebuilder buat ngebuild data yang udah di fetch

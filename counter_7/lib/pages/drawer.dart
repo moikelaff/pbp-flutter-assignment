@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/budgetForm.dart';
-import 'package:counter_7/showBudget.dart';
+import 'package:counter_7/pages/budgetForm.dart';
+import 'package:counter_7/pages/showBudget.dart';
+import 'package:counter_7/pages/watchlistPage.dart';
 
 class myDrawer extends StatelessWidget {
   const myDrawer({Key? key}) : super(key: key);
@@ -36,6 +37,15 @@ class myDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const showBudget()),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Watchlist'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const watchlistPage()),
               );
             },
           ),
